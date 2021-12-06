@@ -177,13 +177,6 @@ export default class MarkdownFormatter extends React.PureComponent {
 				matched.push(parsed);
 			}
 		}
-
-		// slice the new line character and update the text
-		matched.forEach(value => {
-			if (this.text[value.index] === '\n' || this.text[value.index] === '\r') {
-				this.text = this.text.slice(0, value.index) + " " + this.text.slice(value.index + 1);
-			}
-		});
 	}
 
 	/**
