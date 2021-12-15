@@ -1,71 +1,171 @@
 {
-    "type": "AdaptiveCard",
-    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
-    "version": "1.3",
-    "body": [
-        {
-            "type": "TextBlock",
-            "wrap": true,
-            "text": "Textblock without new line",
-            "horizontalAlignment": "Center"
-        },
-        {
-            "type": "TextBlock",
-            "text": "To schedule a COVID-19 vaccine appointment, you will need to register with kp.org and receive a unique Medical Record Number from Kaiser Permanente. You are registering with Kaiser Permanente in Washington. If you would rather make an appointment to receive the vaccine in a different state or region, please return to our main COVID-19 vaccine page at kp.org/covidvaccine to make your selection. Please fill in the information below. All fields are required unless marked as optional.",
-            "wrap": true
-        },
-        {
-            "type": "TextBlock",
-            "text": "Textblock with new line",
-            "wrap": true,
-            "horizontalAlignment": "Center",
-            "separator": true
-        },
-        {
-            "type": "TextBlock",
-            "text": "To schedule a COVID-19 vaccine appointment, you will need to register with kp.org and receive a unique Medical Record Number from Kaiser Permanente. \nYou are registering with Kaiser Permanente in Washington. If you would rather make an appointment to receive the vaccine in a different state or region, please return to our main COVID-19 vaccine page at kp.org/covidvaccine to make your selection. Please fill in the information below. All fields are required unless marked as optional.",
-            "wrap": true
-        },
-        {
-            "type": "TextBlock",
-            "text": "Textblock with multiple new lines",
-            "wrap": true,
-            "horizontalAlignment": "Center",
-            "separator": true
-        },
-        {
-            "type": "TextBlock",
-            "text": "To schedule a COVID-19 vaccine appointment, you will need to register with kp.org and receive a unique Medical Record Number from Kaiser Permanente. \n\nYou are registering with Kaiser Permanente in Washington. If you would rather make an appointment to receive the vaccine in a different state or region, please return to our main COVID-19 vaccine page at kp.org/covidvaccine to make your selection. Please fill in the information below. \n\nAll fields are required unless marked as optional.",
-            "wrap": true
-        },
-        {
-            "type": "TextBlock",
-            "wrap": true,
-            "text": "Textblock with new line at end",
-            "horizontalAlignment": "Center",
-            "separator": true
-        },
-        {
-            "type": "TextBlock",
-            "text": "To schedule a COVID-19 vaccine appointment, you will need to register with kp.org and receive a unique Medical Record Number from Kaiser Permanente. You are registering with Kaiser Permanente in Washington. If you would rather make an appointment to receive the vaccine in a different state or region, please return to our main COVID-19 vaccine page at kp.org/covidvaccine to make your selection. Please fill in the information below. All fields are required unless marked as optional.\n",
-            "wrap": true
-        },
-        {
-            "type": "TextBlock",
-            "text": "Textblock with new line at start",
-            "wrap": true,
-            "horizontalAlignment": "Center",
-            "separator": true
-        },
-        {
-            "type": "TextBlock",
-            "text": "\nTo schedule a COVID-19 vaccine appointment, you will need to register with kp.org and receive a unique Medical Record Number from Kaiser Permanente. You are registering with Kaiser Permanente in Washington. If you would rather make an appointment to receive the vaccine in a different state or region, please return to our main COVID-19 vaccine page at kp.org/covidvaccine to make your selection. Please fill in the information below. All fields are required unless marked as optional.",
-            "wrap": true
-        },
-        {
-            "type": "TextBlock",
-            "wrap": true,
-            "separator": true
-        }
-    ]
+	"type": "AdaptiveCard",
+	"$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+	"version": "1.3",
+	"body": [
+		{
+			"type": "TextBlock",
+			"wrap": true,
+			"text": "At start",
+			"horizontalAlignment": "Center"
+		},
+		{
+			"type": "TextBlock",
+			"wrap": true,
+			"separator": true,
+			"text": " To schedule a COVID-19 vaccine appointment, you will need to register with kp.org and receive a unique Medical Record Number from Kaiser Permanente."
+		},
+		{
+			"type": "TextBlock",
+			"wrap": true,
+			"separator": true,
+			"text": "    To schedule a COVID-19 vaccine appointment, you will need to register with kp.org and receive a unique Medical Record Number from Kaiser Permanente."
+		},
+		{
+			"type": "TextBlock",
+			"text": "\nTo schedule a COVID-19 vaccine appointment, you will need to register with kp.org and receive a unique Medical Record Number from Kaiser Permanente.",
+			"wrap": true,
+			"separator": true
+		},
+		{
+			"type": "TextBlock",
+			"text": "\n\n\n\nTo schedule a COVID-19 vaccine appointment, you will need to register with kp.org and receive a unique Medical Record Number from Kaiser Permanente.",
+			"wrap": true,
+			"separator": true
+		},
+		{
+			"type": "TextBlock",
+			"text": " \nTo schedule a COVID-19 vaccine appointment, you will need to register with kp.org and receive a unique Medical Record Number from Kaiser Permanente.",
+			"wrap": true,
+			"separator": true
+		},
+		{
+			"type": "TextBlock",
+			"text": " \n\n\n\nTo schedule a COVID-19 vaccine appointment, you will need to register with kp.org and receive a unique Medical Record Number from Kaiser Permanente.",
+			"wrap": true,
+			"separator": true
+		},
+		{
+			"type": "TextBlock",
+			"text": "    \nTo schedule a COVID-19 vaccine appointment, you will need to register with kp.org and receive a unique Medical Record Number from Kaiser Permanente.",
+			"wrap": true,
+			"separator": true
+		},
+		{
+			"type": "TextBlock",
+			"text": "    \n\n\n\nTo schedule a COVID-19 vaccine appointment, you will need to register with kp.org and receive a unique Medical Record Number from Kaiser Permanente.",
+			"wrap": true,
+			"separator": true
+		},
+		{
+			"type": "TextBlock",
+			"text": "At middle",
+			"wrap": true,
+			"horizontalAlignment": "Center",
+			"separator": true
+		},
+		{
+			"type": "TextBlock",
+			"text": "To schedule a COVID-19 vaccine appoint ment, you will need to register with kp.org and receive a unique Medical Record Number from Kaiser Permanente.",
+			"wrap": true,
+			"separator": true
+		},
+		{
+			"type": "TextBlock",
+			"text": "To schedule a COVID-19 vaccine appoint    ment, you will need to register with kp.org and receive a unique Medical Record Number from Kaiser Permanente.",
+			"wrap": true,
+			"separator": true
+		},
+		{
+			"type": "TextBlock",
+			"text": "To schedule a COVID-19 vaccine appoint\nment, you will need to register with kp.org and receive a unique Medical Record Number from Kaiser Permanente.",
+			"wrap": true,
+			"separator": true
+		},
+		{
+			"type": "TextBlock",
+			"text": "To schedule a COVID-19 vaccine appoint\n\n\n\nment, you will need to register with kp.org and receive a unique Medical Record Number from Kaiser Permanente.",
+			"wrap": true,
+			"separator": true
+		},
+		{
+			"type": "TextBlock",
+			"text": "To schedule a COVID-19 vaccine appoint \nment, you will need to register with kp.org and receive a unique Medical Record Number from Kaiser Permanente.",
+			"wrap": true,
+			"separator": true
+		},
+		{
+			"type": "TextBlock",
+			"text": "To schedule a COVID-19 vaccine appoint \n\n\n\nment, you will need to register with kp.org and receive a unique Medical Record Number from Kaiser Permanente.",
+			"wrap": true,
+			"separator": true
+		},
+		{
+			"type": "TextBlock",
+			"text": "To schedule a COVID-19 vaccine appoint     \nment, you will need to register with kp.org and receive a unique Medical Record Number from Kaiser Permanente.",
+			"wrap": true,
+			"separator": true
+		},
+		{
+			"type": "TextBlock",
+			"text": "To schedule a COVID-19 vaccine appoint    \n\n\n\nment, you will need to register with kp.org and receive a unique Medical Record Number from Kaiser Permanente.",
+			"wrap": true,
+			"separator": true
+		},
+		{
+			"type": "TextBlock",
+			"text": "At end",
+			"wrap": true,
+			"horizontalAlignment": "Center",
+			"separator": true
+		},
+		{
+			"type": "TextBlock",
+			"text": "To schedule a COVID-19 vaccine appointment, you will need to register with kp.org and receive a unique Medical Record Number from Kaiser Permanente. ",
+			"wrap": true,
+			"separator": true
+		},
+		{
+			"type": "TextBlock",
+			"text": "To schedule a COVID-19 vaccine appointment, you will need to register with kp.org and receive a unique Medical Record Number from Kaiser Permanente.     ",
+			"wrap": true,
+			"separator": true
+		},
+		{
+			"type": "TextBlock",
+			"text": "To schedule a COVID-19 vaccine appointment, you will need to register with kp.org and receive a unique Medical Record Number from Kaiser Permanente.\n",
+			"wrap": true,
+			"separator": true
+		},
+		{
+			"type": "TextBlock",
+			"text": "To schedule a COVID-19 vaccine appointment, you will need to register with kp.org and receive a unique Medical Record Number from Kaiser Permanente.\n\n\n\n",
+			"wrap": true,
+			"separator": true
+		},
+		{
+			"type": "TextBlock",
+			"text": "To schedule a COVID-19 vaccine appointment, you will need to register with kp.org and receive a unique Medical Record Number from Kaiser Permanente. \n",
+			"wrap": true,
+			"separator": true
+		},
+		{
+			"type": "TextBlock",
+			"text": "To schedule a COVID-19 vaccine appointment, you will need to register with kp.org and receive a unique Medical Record Number from Kaiser Permanente. \n\n\n\n",
+			"wrap": true,
+			"separator": true
+		},
+		{
+			"type": "TextBlock",
+			"text": "To schedule a COVID-19 vaccine appointment, you will need to register with kp.org and receive a unique Medical Record Number from Kaiser Permanente.     \n",
+			"wrap": true,
+			"separator": true
+		},
+		{
+			"type": "TextBlock",
+			"text": "To schedule a COVID-19 vaccine appointment, you will need to register with kp.org and receive a unique Medical Record Number from Kaiser Permanente.     \n\n\n\n",
+			"wrap": true,
+			"separator": true
+		}
+	]
 }
