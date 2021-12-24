@@ -238,7 +238,7 @@ export class Input extends React.Component {
 								textContentType={textStyle}
 								keyboardType={keyboardType}
 								onFocus={this.handleFocus}
-								onBlur={this.props.handleBlur}
+								onBlur={this.handleBlur}
 								onChangeText={(text) => {
 									this.props.textValueChanged(text, addInputItem);
 									this.textValueChanged(text);
