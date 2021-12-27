@@ -157,7 +157,10 @@ export class ChoiceSetInput extends React.Component {
 	}
 
 	/**
-	 * @description Renders Picker component as per the json
+	 * @description Renders Picker component as per the json for single choice compact style.
+	 * Renders custom element containing textbox with placeholder/default/selected value with dropdown image.
+	 * It hides the default picker element which shows its own text box in Android and shows custom picker element.
+	 * On picker element selected, it shows the dropdown with list of choices.
 	 */
 	renderPickerComponent(addInputItem) {
 		return (
