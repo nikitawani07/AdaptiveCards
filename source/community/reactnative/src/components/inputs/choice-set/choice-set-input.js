@@ -45,7 +45,7 @@ export class ChoiceSetInput extends React.Component {
 		this.placeholder = this.payload.placeholder
 
 		this.state = {
-			selectedPickerValue: props.json.value,
+			selectedPickerValue: this.payload.value,
 			isPickerSelected: false,
 			radioButtonIndex: undefined,
 			activeIndex: undefined,
