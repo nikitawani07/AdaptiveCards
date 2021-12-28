@@ -42,7 +42,7 @@ export class ChoiceSetInput extends React.Component {
 		this.payload = props.json;
 		this.label = Constants.EmptyString;
 		this.isRequired = this.payload.isRequired || false;
-		this.placeholder = props.json.placeholder
+		this.placeholder = this.payload.placeholder
 
 		this.state = {
 			selectedPickerValue: props.json.value,
