@@ -37,7 +37,7 @@ export class PickerInput extends React.Component {
 		this.label = Constants.EmptyString;
 		this.parseHostConfig();
 
-		this.errorMessage = this.payload.errorMessage || Constants.ErrorMessage;
+		this.errorMessage = this.payload.errorMessage;
 
 		this.state = {
 			isRequired: this.payload.isRequired || false,

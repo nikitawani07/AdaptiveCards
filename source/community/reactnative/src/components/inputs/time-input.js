@@ -79,6 +79,7 @@ export class TimeInput extends React.Component {
 	 * @description Hides the TimePicker on close event
 	 */
 	handleModalClose = () => {
+		!this.state.value && this.setTime(this.state.chosenTime);
 		this.setState({ modalVisible: false })
 	}
 

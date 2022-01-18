@@ -105,7 +105,7 @@ export default class ElementWrapper extends React.Component {
 		const validationTextStyles = [this.styleConfig.fontFamilyName, this.styleConfig.defaultDestructiveButtonForegroundColor];
 		return (
 			<Text style={validationTextStyles}>
-				{payload.errorMessage || Constants.ErrorMessage}
+				{payload.errorMessage}
 			</Text>
 		)
 	}

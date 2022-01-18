@@ -64,6 +64,7 @@ export class DateInput extends React.Component {
 	 * @description Hides the DatePicker on close event
 	 */
 	handleModalClose = () => {
+		!this.state.value && this.setDate(this.state.chosenDate);
 		this.setState({ modalVisible: false })
 	}
 
