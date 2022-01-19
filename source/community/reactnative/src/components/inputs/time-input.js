@@ -16,6 +16,8 @@ export class TimeInput extends React.Component {
 		super(props);
 
 		this.payload = props.json;
+		this.minTime = this.payload.min ? this.parseTimeString(this.payload.min) : undefined;
+		this.maxTime = this.payload.max ? this.parseTimeString(this.payload.max) : undefined;
 		this.parseHostConfig();
 	}
 
@@ -24,9 +26,7 @@ export class TimeInput extends React.Component {
 	 */
 	parseHostConfig() {
 		this.state = {
-			chosenTime: this.payload.value ? this.parseTimeString(this.payload.value) : new Date(),
-			minTime: this.payload.min ? this.parseTimeString(this.payload.min) : undefined,
-			maxTime: this.payload.max ? this.parseTimeString(this.payload.max) : undefined,
+			chosenTime: this.getChosenTime(),
 			modalVisible: false,
 			modalVisibleAndroid: false,
 			value: this.payload.value ? this.payload.value : Constants.EmptyString
@@ -34,6 +34,20 @@ export class TimeInput extends React.Component {
 
 		this.state.setTime = this.setTime.bind(this);
 	}
+
+	/**
+	 * @description Return chosen time value based on value and range present in payload.
+	 */
+	getChosenTime() {
+		timeValue = this.payload.value && this.parseTimeString(this.payload.value);
+		if (timeValue) {
+			if (this.minTime && timeValue < this.minTime) return this.minTime;
+			if (this.maxTime && timeValue > this.maxTime) return this.maxTime;
+			return timeValue;
+		}
+		return this.maxTime || new Date();
+	}
+
 
 	/**
 	 * @description Return Date object from string.
@@ -79,7 +93,7 @@ export class TimeInput extends React.Component {
 	 * @description Hides the TimePicker on close event
 	 */
 	handleModalClose = () => {
-		!this.state.value && this.setTime(this.state.chosenTime);
+		this.setTime(this.state.chosenTime);
 		this.setState({ modalVisible: false })
 	}
 
@@ -116,8 +130,8 @@ export class TimeInput extends React.Component {
 					modalVisible={this.state.modalVisible}
 					handleModalClose={this.handleModalClose}
 					chosenDate={this.state.chosenTime || new Date()}
-					minDate={this.state.minTime}
-					maxDate={this.state.maxTime}
+					minDate={this.minTime}
+					maxDate={this.maxTime}
 					handleDateChange={this.handleTimeChange}
 					mode='time'
 					configManager={this.props.configManager}
