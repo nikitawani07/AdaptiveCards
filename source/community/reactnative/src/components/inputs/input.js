@@ -41,7 +41,7 @@ export class Input extends React.Component {
 		this.textStyle = Constants.EmptyString;
 		this.label = Constants.EmptyString;
 		this.isRequired = this.payload.isRequired || false;
-		this.errorMessage = this.payload.errorMessage;
+		this.errorMessage = this.payload.errorMessage || (this.payload.isRequired && Constants.ErrorMessage);
 
 		this.inlineAction = {};
 		this.state = {

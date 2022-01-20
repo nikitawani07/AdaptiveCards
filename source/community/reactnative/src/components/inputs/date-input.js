@@ -1,6 +1,10 @@
 /**
  * Date component based on the given payload.
  * 
+ * For range is present in given payload,
+ * If no default value is given: it selects max value from payload else, current date in date picker.
+ * If given default value is not within the range: it selects minimum or maximum value from payload depending on the given default value in date picker.
+ * 
  * Refer https://docs.microsoft.com/en-us/adaptive-cards/authoring-cards/card-schema#inputdate
  */
 

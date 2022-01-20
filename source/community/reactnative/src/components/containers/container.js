@@ -84,7 +84,8 @@ export class Container extends React.Component {
 	getValidationText = () => {
 		const payload = this.payload;
 		const validationTextStyles = [this.styleConfig.fontFamilyName, this.styleConfig.defaultDestructiveButtonForegroundColor];
-		const errorMessage = (payload.validation && payload.validation.errorMessage);
+		const errorMessage = (payload.validation && payload.validation.errorMessage) ?
+			payload.validation.errorMessage : ((this.payload.isRequired && Constants.ErrorMessage) || Constants.EmptyString);
 
 		return (
 			<Text style={validationTextStyles}>
