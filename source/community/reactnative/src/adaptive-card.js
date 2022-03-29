@@ -248,12 +248,14 @@ export default class AdaptiveCard extends React.Component {
             </ContainerWrapper>
         );
 
-		if (!this.props.isActionShowCard) {
+        if (!this.props.isActionShowCard) {
 			adaptiveCardContent = (
-				<KeyboardAwareScrollView extraHeight={120}>
-					{adaptiveCardContent}
-				</KeyboardAwareScrollView>
-			);
+                <KeyboardAwareScrollView
+                    enableOnAndroid={true}
+                    extraHeight={120}>
+                    {adaptiveCardContent}
+                </KeyboardAwareScrollView>
+            );
 		}
 
 		// checks if selectAction option is available for adaptive card
